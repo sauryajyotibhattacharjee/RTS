@@ -1,0 +1,214 @@
+*{
+    background-image: url(climatechange.jpg);
+}
+
+#cityInput, #cityName, #inputContainer,button{
+    margin: 3px;
+padding:5px;
+text-align:center;
+font-size:30px;
+font-weight: bold;
+}
+
+#weatherContainer{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    height: 300px;
+    width: 1300px;
+    border: 5px solid rgba(97, 95, 95, 0.829);    
+    border-radius: 10px;
+}
+
+#iconsContainer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    height: 240px;
+    width: 1200px;    
+    border: 5px solid rgb(31, 82, 82);    
+    border-radius: 10px;
+}
+
+.icons{
+    display: inline-bock;
+    float: left;
+    height: 200px;
+    width: 190px;
+    margin: 20px;
+    border: 5px solid rgb(48, 47, 47);
+    border-radius: 10px;
+}
+
+.image{
+    height: 140px;
+    width: 100%;
+}
+
+.imgClass{
+    height: 140px;
+    width: 100%;
+}
+
+.weather{
+    margin: 5px;
+   /*  background-color: rgb(106, 215, 255); */
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.minValues{
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    height: 25px;
+    width: 85px;
+    margin: 0;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+
+.maxValues{
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    height: 25px;
+    width: 85px;
+    margin: 0;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+#clock {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+    bottom: 100px;
+    border-radius: 50%;
+    position: relative;
+    background-image: url(dhni.jpeg);
+    align-self: self-end;
+  }
+
+  #hour-hand,
+  #minute-hand,
+  #second-hand {
+    background-color: #000;
+    position: absolute;
+    transform-origin: bottom center;
+    transition: all 0.5s;
+  }
+
+  #hour-hand {
+    width: 6px;
+    height: 70px;
+    top: 50%;
+    left: 50%;
+    margin-left: -3px;
+    margin-top: -70px;
+  }
+
+  #minute-hand {
+    width: 4px;
+    height: 90px;
+    top: 50%;
+    left: 50%;
+    margin-left: -2px;
+    margin-top: -90px;
+  }
+
+  #second-hand {
+    width: 2px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    margin-left: -1px;
+    margin-top: -100px;
+    background-color: black;
+  }
+  .calculator {
+    position: absolute;
+    bottom: 5px;
+    left: 1200px;
+    width: 200px;
+    margin: 0;
+    padding: 20px;
+    background: url(keeper.jpg);
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(182, 19, 19, 0.3);
+    font-family: Arial, sans-serif;
+  }
+  
+  #result {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 10px;
+    text-align: right;
+    background-color: #c2185b;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+  
+  button {
+    width: 50%;
+    padding: 15px;
+    font-size: 10px;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #d3d3d3;
+  }
+  
+  button.operator {
+    background-color: #ff9800;
+    color: #fff;
+  }
+  
+  button.operator:hover {
+    background-color: #f57c00;
+  }
+  
+  button.clear {
+    background-color: #e91e63;
+    color: #fff;
+  }
+  
+  button.clear:hover {
+    background-color: #c2185b;
+  }
+  
+  button.equals {
+    background-color: #2196f3;
+    color: #fff;
+    grid-column: span 2;
+  }
+  
+  button.equals:hover {
+    background-color: #1976d2;
+  }
+  
+  button.delete {
+    background-color: #9e9e9e;
+    color: #fff;
+  }
+  
+  button.delete:hover {
+    background-color: #757575;
+  }
+  
+  

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="w.css">
+    
+    <title>WEATHERWEB</title>
+</head>
+<body onload="DefaultScreen()">
+    <center>
+        <h1 id="Para1">REAL TIME SHOW</h1>
+        <p id="inputContainer">City: <input type="text" id="cityInput"></p>
+        <button type="button" onclick="GetInfo()">Click Me</button>        
+        <h2 id="cityName">---London---</h2>
+    </center>
+    
+    <div id = "weatherContainer">
+        <div id="iconsContainer">    
+            <div class = "icons">
+                <p class="weather" id="day1"></p>
+                <div class="image"><img src="dots.png" class="imgClass" id="img1"></div>
+                <p class="minValues" id="day1Min">Loading...</p>
+                <p class="maxValues" id="day1Max">Loading...</p>
+            
+            </div>
+            <div class = "icons">
+                <p class="weather" id="day2"></p>
+                <div class="image"><img src="dots.png" class="imgClass" id="img2"></div>
+                <p class="minValues" id="day2Min">Loading...</p>
+                <p class="maxValues" id="day2Max">Loading...</p>
+            
+            </div>
+            <div class = "icons">
+                <p class="weather" id="day3"></p>
+                <div class="image"><img src="dots.png" class="imgClass" id="img3"></div>
+                <p class="minValues" id="day3Min">Loading...</p>
+                <p class="maxValues" id="day3Max">Loading...</p>
+            
+            </div>
+            <div class = "icons">
+                <p class="weather" id="day4"></p>
+                <div class="image"><img src="dots.png" class="imgClass" id="img4"></div>
+                <p class="minValues" id="day4Min">Loading...</p>
+                <p class="maxValues" id="day4Max">Loading...</p>
+            
+            </div>
+            <div class = "icons">
+                <p class="weather" id="day5"></p>
+                <div class="image"><img src="dots.png" class="imgClass" id="img5"></div>
+                <p class="minValues" id="day5Min">Loading...</p>
+                <p class="maxValues" id="day5Max">Loading...</p>
+            
+            </div>
+        </div>
+    </div>
+    <div id="clock">
+        <div id="hour-hand"></div>
+        <div id="minute-hand"></div>
+        <div id="second-hand"></div>
+        <div class="buttons">
+      </div>
+      <div class="calculator">
+        <div id="result"></div>
+        <div class="buttons">
+          <button class="operator" onclick="append('+')">+</button>
+          <button class="operator" onclick="append('-')">-</button>
+          <button class="operator" onclick="append('*')">*</button>
+          <button class="operator" onclick="append('/')">/</button>
+          <button onclick="append('7')">7</button>
+          <button onclick="append('8')">8</button>
+          <button onclick="append('9')">9</button>
+          <button onclick="append('4')">4</button>
+          <button onclick="append('5')">5</button>
+          <button onclick="append('6')">6</button>
+          <button onclick="append('1')">1</button>
+          <button onclick="append('2')">2</button>
+          <button onclick="append('3')">3</button>
+          <button onclick="append('0')">0</button>
+          <button onclick="append('.')">.</button>
+          <button class="clear" onclick="clearInput()">C</button>
+          <button class="delete" onclick="deleteChar()">Del</button>
+          <button class="equals" onclick="calculate()">=</button>
+        </div>
+      </div>
+      
+
+
+        <script src="w.js"></script>
+
+
+</body>
+</html>
